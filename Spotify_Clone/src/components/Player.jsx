@@ -38,7 +38,7 @@ function Player( ) {
 
   useEffect(() => {
    
-
+   
     const updateProgress = () => {
       const { currentTime, duration } = audioRef.current;
       const progress = (currentTime / duration) * 100;
@@ -47,8 +47,11 @@ function Player( ) {
     };
    
       audioRef.current.addEventListener('timeupdate', updateProgress);
+
     
-   
+   if (currentMusic) {
+    setIsPlaying(true)
+   }
   }, []);
 
   useEffect(() => {
@@ -66,10 +69,11 @@ function Player( ) {
   };
 
   function togglePlay() {
-    if ( currentMusic.tocando === true && isPlaying) {
+    if ( isPlaying) {
       audioRef.current.pause();
     } else {
       audioRef.current.play();
+      
     }
     setIsPlaying(!isPlaying);
   }
@@ -105,7 +109,7 @@ function Player( ) {
         <div style={{ width: "100%" , display:'flex', justifyContent:'center',zIndex:'5', alignItems:'center',borderRight:'1 px solid gray'}}>
            <Random></Random>
           <Arrow style={{ transform: "rotate(180deg)" }}></Arrow>
-          {alternateIcon  ? (
+          {isPlaying ? (
             <Pause onClick={togglePlay}></Pause>
            
           ) : (
