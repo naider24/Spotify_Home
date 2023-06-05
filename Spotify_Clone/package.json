@@ -1,6 +1,9 @@
 { "homepage": "./Spotify/Spotify_Clone",
   "name": "spotify-clone",
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a5dad50f0c98278558ba2a5d9a6f74b21dcdb17
   "private": true,
   "version": "0.0.0",
   "type": "module",
