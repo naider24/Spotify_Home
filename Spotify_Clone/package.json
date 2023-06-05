@@ -1,5 +1,6 @@
 { "homepage": "./",
   "name": "spotify-clone",
+  "homepage":"./"
   "private": true,
   "version": "0.0.0",
   "type": "module",
