@@ -100,8 +100,8 @@ function Player( ) {
         <Informations>
             <ImageAlbum style={{ backgroundImage: `url(${currentMusic?.image})` }} ></ImageAlbum>
             <ArtistAndMusic>
-            <NameMusic>{currentMusic?.name}</NameMusic>
-            <Artist>{currentMusic?.artist}</Artist>
+            <NameMusic>{currentMusic? currentMusic.name: '...'}</NameMusic>
+            <Artist>{currentMusic? currentMusic.artist:'selecione uma musica'}</Artist>
             </ArtistAndMusic>
         </Informations>
       </MusicInformation>
