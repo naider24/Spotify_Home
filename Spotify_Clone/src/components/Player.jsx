@@ -25,12 +25,12 @@ import {
 import { MusicContext } from "./MusicContext";
  
 function Player( ) {
-  const {  currentMusic, audioRef} = useContext(MusicContext); 
+  const { isPlaying ,currentMusic, audioRef, playMusic} = useContext(MusicContext); 
   const [volume, setVolume] = useState(1)
   const soundRef = useRef()
-  const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+
   const [alternateIcon, setAlternateIcon] = useState()  
 
   console.log(audioRef)
@@ -50,7 +50,7 @@ function Player( ) {
 
     
    if (currentMusic) {
-    setIsPlaying(true)
+    
    }
   }, []);
 
@@ -69,13 +69,7 @@ function Player( ) {
   };
 
   function togglePlay() {
-    if ( isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-      
-    }
-    setIsPlaying(!isPlaying);
+    playMusic(currentMusic)
   }
 
 
@@ -100,8 +94,8 @@ function Player( ) {
         <Informations>
             <ImageAlbum style={{ backgroundImage: `url(${currentMusic?.image})` }} ></ImageAlbum>
             <ArtistAndMusic>
-            <NameMusic>{currentMusic? currentMusic.name: '...'}</NameMusic>
-            <Artist>{currentMusic? currentMusic.artist:'selecione uma musica'}</Artist>
+            <NameMusic>{currentMusic?.name}</NameMusic>
+            <Artist>{currentMusic?.artist}</Artist>
             </ArtistAndMusic>
         </Informations>
       </MusicInformation>
