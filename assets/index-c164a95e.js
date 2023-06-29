@@ -61,9 +61,11 @@ display: flex;
 width: 100%;
 height: 100%;
 justify-content: center;
+position: relative;
 `,C0=U.div`
 display: flex;
 flex:1;
+overflow: hidden;
 width: 95%;
 margin-left: 20px;
 padding-left: 10px;
@@ -153,7 +155,6 @@ transition: 0.6s;
 &:hover{
  color: #37F07D;
 }`,B0=U.input`
-
   appearance: none;
   margin-right: 15px;
   width: 200px;
@@ -161,11 +162,7 @@ transition: 0.6s;
   background: white;
   border-radius: 5px;
   background-image: linear-gradient(#1ED764, #1ED764);
-  
-
   background-repeat: no-repeat;
-
-
 
 &::-webkit-slider-thumb {
 
@@ -188,8 +185,8 @@ border-left: 1px solid gray;
 align-items: center;
 justify-content: center;
 `,W0=U.div`
-width: 30%;
-height: 90%;
+width: 78px;
+height: 82px;
 background-size: cover;
 border-radius: 10px;
 background-position: center center;
@@ -197,7 +194,7 @@ background-position: center center;
 display: flex;
 height: 100%;
 width: 100%;
-padding-left: 20px;
+
 border-right: 1px solid gray;
 align-items: center;
 
@@ -209,7 +206,7 @@ align-items: center;
 `,G0=U.div`
 display: flex;
 flex-direction: column;
-padding: 10px;
+padding-left:10px;
 height: 80%;
 align-items: center;
 justify-content: center;
@@ -299,7 +296,7 @@ margin-top: 120px;
 `,n1=U.div`
 display: flex;
 border: 1px solid #1ED764 ;
-margin-top: 50px;
+
 height: 60px;
 width: 60px;
 border-radius:50%;
@@ -327,6 +324,7 @@ padding: 30px;
 
 
 
+
 @media only screen and (max-width: 768px) {
   
  display: none;
@@ -347,7 +345,7 @@ z-index: 2;
 }
 `,a1=U.div`
 display: flex;
-width: 100%;
+width: 100px;
 height: 50px;
 justify-content: start;
 align-items: start;
@@ -355,6 +353,7 @@ background-image: url(${o1});
 background-position: center;
 background-repeat: no-repeat;
 padding-block-end:20px;
+
 `,c1=U(l1)`
 display: flex;
 font-size: ${e=>e.checked?"1.7em":"1.5em"};
@@ -392,10 +391,10 @@ font-weight: bold;
 font-family: 'Wix Madefor Display', sans-serif;
 `;const d1=U.div`
 display: flex;
-width: 100%;
+width: 80%;
 background-color: #1ED764;
 position: absolute;
-top: 0%;
+top: 35%;
 border-radius: 10px;
 height: 50px;
 transition: 0.6s;
@@ -514,4 +513,4 @@ justify-content: space-between;
 width: 98%;
 height: 1px ;
 background-color: gray;
-`,v1="/Spotify_Home/assets/Stay_Kid_Laroi-9fb46308.jpg",y1="/Spotify_Home/assets/BlindingLights-8b65b75a.jpg",w1="/Spotify_Home/assets/SignOfTheTimes-773d1112.jpg",x1="/Spotify_Home/assets/LeaveTheDoorOpen-810ca745.jpg",S1="/Spotify_Home/assets/RuMine-ac62d4ab.jpg",k1="/Spotify_Home/assets/RuMine-3009853e.mp3",C1="/Spotify_Home/assets/Lovely-3e70c6c7.jpg",E1="/Spotify_Home/assets/Lovely-eb5777ef.mp3",_1="/Spotify_Home/assets/Melhor_So-9792914e.jpg",P1="/Spotify_Home/assets/ErroGostoso-923f6e62.png",z1="/Spotify_Home/assets/GlimpsesOfUs-7c561961.jpg",j1="/Spotify_Home/assets/Joji_-_Glimpse_of_Us-ec565fdd.mp3",T1="/Spotify_Home/assets/ErroGostoso-52c7246b.mp3",N1="/Spotify_Home/assets/The_Kid_LAROI_Justin_Bieber_-_Stay-f625db5e.mp3",L1="/Spotify_Home/assets/The_Weeknd_-_Blinding_Lights-d7ae80da.mp3",M1="/Spotify_Home/assets/MelhorSo-f8ce0af4.mp3",O1="/Spotify_Home/assets/SignOfTheTimes-d927352e.mp3",R1="/Spotify_Home/assets/LeaveTheDoorOpen-a981f5a7.mp3",I1="/Spotify_Home/assets/Goosebumps-d9cd5627.mp3",it={stay:{audioUrl:N1,image:v1,name:"Stay",artist:"Kid Laroy ft. Justin Bieber",tocando:!0},goosebumps:{audioUrl:I1,image:_0,name:"Goosebumps",artist:"Travis Scott",tocando:!0},ruMine:{audioUrl:k1,image:S1,name:"R U Mine",artist:"Arctic Monkeys",tocando:!0},glimpseOfUs:{audioUrl:j1,image:z1,name:"Glimpse Of Us",artist:"Joji",tocando:!0},blindinLights:{audioUrl:L1,image:y1,name:"BlindingLights",artist:"the Weekend",tocando:!0},erroGostoso:{audioUrl:T1,image:P1,name:"Erro Gostoso",artist:"Simone",tocando:!0},signOfTheTimes:{audioUrl:O1,image:w1,name:"Sign Of The Times",artist:"Harry Style",tocando:!0},melhorSo:{audioUrl:M1,image:_1,name:"Melhor só",artist:"Kayblack ft. Baco",tocando:!0},leaveTheDoorOpen:{audioUrl:R1,image:x1,name:"Leave The Door Open",artist:"Bruno Mars",tocando:!0},lovely:{audioUrl:E1,image:C1,name:"Lovely",artist:"Billie Eilish ft. Khalid",tocando:!0}};function $1(){const{playMusic:e}=q.useContext(Wr),t=n=>{const r=it[n];e(r)};return v.jsx(v.Fragment,{children:v.jsxs(m1,{children:[v.jsx(h1,{children:"Escute agora"}),v.jsx(pt,{style:{backgroundImage:`url(${it.stay.image})`},children:v.jsxs("div",{id:"List",style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("stay")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Stay"}),v.jsx(gt,{id:"artist",children:"Kid laroy ft. Justin Bieber"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.blindinLights.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("blindinLights")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Blinding Lights"}),v.jsx(gt,{id:"artist",children:"the Weekend"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.signOfTheTimes.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("signOfTheTimes")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Sign of the times"}),v.jsx(gt,{id:"artist",children:"Harry Styles"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.leaveTheDoorOpen.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("leaveTheDoorOpen")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Leave The Door Open"}),v.jsx(gt,{id:"artist",children:"Bruno Mars"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.ruMine.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("ruMine")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"R U Mine"}),v.jsx(gt,{id:"artist",children:"Arctic Monkeys"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.goosebumps.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("goosebumps")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Goosebumps"}),v.jsx(gt,{id:"artist",children:"Travis Scott"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.melhorSo.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("melhorSo")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Melhor só"}),v.jsx(gt,{id:"artist",children:"Kayblack"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.lovely.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("lovely")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Lovely"}),v.jsx(gt,{id:"artist",children:"Billie Eilish"})]})]})}),"    ",v.jsx(pt,{style:{backgroundImage:`url(${it.erroGostoso.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("erroGostoso")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Erro gostoso"}),v.jsx(gt,{id:"artist",children:"Simaria"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.glimpseOfUs.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("glimpseOfUs")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"GlimpsesOfUs"}),v.jsx(gt,{id:"artist",children:"Joji"})]})]})})]})})}function A1(){q.createContext(Wr);const e=q.useRef(),[t,n]=q.useState({home:!0,lib:!1,playlist:!1});function r(){n(o=>({home:!0,playlist:!1,lib:!1})),e.current.style.top="0%"}function l(){n(o=>({home:!1,playlist:!1,lib:!0})),e.current.style.top="40%"}function i(){n(o=>({home:!1,playlist:!0,lib:!1})),e.current.style.top="81%"}return console.log(t),v.jsx(v.Fragment,{children:v.jsx(S0,{children:v.jsxs(k0,{children:[v.jsxs(u1,{children:[v.jsx(a1,{}),v.jsx(t1,{children:v.jsxs("div",{style:{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"},children:[v.jsx(n1,{children:"N"}),v.jsx(r1,{children:"Nicollas"})]})}),v.jsxs("div",{style:{width:"100%",display:"flex",justifyContent:"space-between",flexDirection:"column",height:"200px",paddingTop:"10px",position:"relative"},children:[v.jsx(d1,{ref:e}),v.jsx(c1,{checked:t.home,onClick:r}),v.jsx(f1,{checked:t.lib,onClick:l}),v.jsx(s1,{checked:t.playlist,onClick:i})]})]}),v.jsxs(E0,{children:[v.jsxs(C0,{children:[" ))) ",v.jsx("div",{style:{marginLeft:"10px"}})," ",v.jsx("p",{style:{marginTop:"28px"},children:"  SPOTIFY"})]}),v.jsx(p1,{children:t.home===!0?v.jsx($1,{}):""}),v.jsx(g1,{}),v.jsx(e1,{})]})]})})})}const D1=()=>{const{currentMusic:e,audioRef:t}=q.useContext(Wr);q.useEffect(()=>()=>{t.current.removeEventListener("loadedmetadata",n)},[e,t]);const n=()=>{t.current.play()};return v.jsx("audio",{ref:t})};function F1(){return v.jsxs(b0,{children:[v.jsx(D1,{}),v.jsx(A1,{})]})}qi.createRoot(document.getElementById("root")).render(v.jsx(be.StrictMode,{children:v.jsx(F1,{})}));
+`,v1="/Spotify_Home/assets/Stay_Kid_Laroi-9fb46308.jpg",y1="/Spotify_Home/assets/BlindingLights-8b65b75a.jpg",w1="/Spotify_Home/assets/SignOfTheTimes-773d1112.jpg",x1="/Spotify_Home/assets/LeaveTheDoorOpen-810ca745.jpg",S1="/Spotify_Home/assets/RuMine-ac62d4ab.jpg",k1="/Spotify_Home/assets/RuMine-3009853e.mp3",C1="/Spotify_Home/assets/Lovely-3e70c6c7.jpg",E1="/Spotify_Home/assets/Lovely-eb5777ef.mp3",_1="/Spotify_Home/assets/Melhor_So-9792914e.jpg",P1="/Spotify_Home/assets/ErroGostoso-923f6e62.png",z1="/Spotify_Home/assets/GlimpsesOfUs-7c561961.jpg",j1="/Spotify_Home/assets/Joji_-_Glimpse_of_Us-ec565fdd.mp3",T1="/Spotify_Home/assets/ErroGostoso-52c7246b.mp3",N1="/Spotify_Home/assets/The_Kid_LAROI_Justin_Bieber_-_Stay-f625db5e.mp3",L1="/Spotify_Home/assets/The_Weeknd_-_Blinding_Lights-d7ae80da.mp3",M1="/Spotify_Home/assets/MelhorSo-f8ce0af4.mp3",O1="/Spotify_Home/assets/SignOfTheTimes-d927352e.mp3",R1="/Spotify_Home/assets/LeaveTheDoorOpen-a981f5a7.mp3",I1="/Spotify_Home/assets/Goosebumps-d9cd5627.mp3",it={stay:{audioUrl:N1,image:v1,name:"Stay",artist:"Kid Laroy ft. Justin Bieber",tocando:!0},goosebumps:{audioUrl:I1,image:_0,name:"Goosebumps",artist:"Travis Scott",tocando:!0},ruMine:{audioUrl:k1,image:S1,name:"R U Mine",artist:"Arctic Monkeys",tocando:!0},glimpseOfUs:{audioUrl:j1,image:z1,name:"Glimpse Of Us",artist:"Joji",tocando:!0},blindinLights:{audioUrl:L1,image:y1,name:"BlindingLights",artist:"the Weekend",tocando:!0},erroGostoso:{audioUrl:T1,image:P1,name:"Erro Gostoso",artist:"Simone",tocando:!0},signOfTheTimes:{audioUrl:O1,image:w1,name:"Sign Of The Times",artist:"Harry Style",tocando:!0},melhorSo:{audioUrl:M1,image:_1,name:"Melhor só",artist:"Kayblack ft. Baco",tocando:!0},leaveTheDoorOpen:{audioUrl:R1,image:x1,name:"Leave The Door Open",artist:"Bruno Mars",tocando:!0},lovely:{audioUrl:E1,image:C1,name:"Lovely",artist:"Billie Eilish ft. Khalid",tocando:!0}};function $1(){const{playMusic:e}=q.useContext(Wr),t=n=>{const r=it[n];e(r)};return v.jsx(v.Fragment,{children:v.jsxs(m1,{children:[v.jsx(h1,{children:"Escute agora"}),v.jsx(pt,{style:{backgroundImage:`url(${it.stay.image})`},children:v.jsxs("div",{id:"List",style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("stay")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Stay"}),v.jsx(gt,{id:"artist",children:"Kid laroy ft. Justin Bieber"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.blindinLights.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("blindinLights")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Blinding Lights"}),v.jsx(gt,{id:"artist",children:"the Weekend"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.signOfTheTimes.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("signOfTheTimes")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Sign of the times"}),v.jsx(gt,{id:"artist",children:"Harry Styles"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.leaveTheDoorOpen.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("leaveTheDoorOpen")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Leave The Door Open"}),v.jsx(gt,{id:"artist",children:"Bruno Mars"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.ruMine.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("ruMine")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"R U Mine"}),v.jsx(gt,{id:"artist",children:"Arctic Monkeys"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.goosebumps.image})`},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("goosebumps")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Goosebumps"}),v.jsx(gt,{id:"artist",children:"Travis Scott"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.melhorSo.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("melhorSo")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Melhor só"}),v.jsx(gt,{id:"artist",children:"Kayblack"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.lovely.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("lovely")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Lovely"}),v.jsx(gt,{id:"artist",children:"Billie Eilish"})]})]})}),"    ",v.jsx(pt,{style:{backgroundImage:`url(${it.erroGostoso.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("erroGostoso")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"Erro gostoso"}),v.jsx(gt,{id:"artist",children:"Simaria"})]})]})}),v.jsx(pt,{style:{backgroundImage:`url(${it.glimpseOfUs.image})`,backgroundPositionY:"0px"},children:v.jsxs("div",{style:{display:"flex",width:"100%",padding:"20px",alignItems:"center"},children:[v.jsx(ht,{id:"playGreen",onClick:()=>t("glimpseOfUs")}),v.jsxs("div",{style:{display:"flex",flexDirection:"column"},children:[v.jsx(mt,{id:"nameMusic",children:"GlimpsesOfUs"}),v.jsx(gt,{id:"artist",children:"Joji"})]})]})})]})})}function A1(){q.createContext(Wr);const e=q.useRef(),[t,n]=q.useState({home:!0,lib:!1,playlist:!1});function r(){n(o=>({home:!0,playlist:!1,lib:!1})),e.current.style.top="35%"}function l(){n(o=>({home:!1,playlist:!1,lib:!0})),e.current.style.top="60%"}function i(){n(o=>({home:!1,playlist:!0,lib:!1})),e.current.style.top="85%"}return console.log(t),v.jsx(v.Fragment,{children:v.jsx(S0,{children:v.jsxs(k0,{children:[v.jsxs(u1,{children:[v.jsx(a1,{}),v.jsx(t1,{children:v.jsxs("div",{style:{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",position:"absolute",padding:"10px",top:"20%"},children:[v.jsx(n1,{children:"N"}),v.jsx(r1,{children:"Nicollas"}),v.jsxs("div",{style:{width:"100%",display:"flex",justifyContent:"space-between",flexDirection:"column",height:"200px",paddingTop:"10px"},children:[v.jsx(d1,{ref:e}),v.jsx(c1,{checked:t.home,onClick:r}),v.jsx(f1,{checked:t.lib,onClick:l}),v.jsx(s1,{checked:t.playlist,onClick:i})]})]})})]}),v.jsxs(E0,{children:[v.jsxs(C0,{children:[" ))) ",v.jsx("div",{style:{marginLeft:"10px",overflow:"hidden"}})," ",v.jsx("p",{style:{marginTop:"28px"},children:"  SPOTIFY"})]}),v.jsx(p1,{children:t.home===!0?v.jsx($1,{}):""}),v.jsx(g1,{}),v.jsx(e1,{})]})]})})})}const D1=()=>{const{currentMusic:e,audioRef:t}=q.useContext(Wr);q.useEffect(()=>()=>{t.current.removeEventListener("loadedmetadata",n)},[e,t]);const n=()=>{t.current.play()};return v.jsx("audio",{ref:t})};function F1(){return v.jsxs(b0,{children:[v.jsx(D1,{}),v.jsx(A1,{})]})}qi.createRoot(document.getElementById("root")).render(v.jsx(be.StrictMode,{children:v.jsx(F1,{})}));
