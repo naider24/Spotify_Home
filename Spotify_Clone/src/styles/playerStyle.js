@@ -8,8 +8,7 @@ import {CgLoadbarSound} from 'react-icons/cg'
 
 
 export const DivPlayer = styled.div`
-flex:0.5;
-
+flex:1;
 width: 100%;
 display: flex;
 padding-top: 20px;
@@ -31,6 +30,12 @@ height: 100%;
 align-items: center;
 
 
+
+@media only screen and (max-width: 1200px) {
+  
+  flex:2;
+ 
+ }
 `
 
 export const PlayMusic = styled.div`
@@ -47,6 +52,11 @@ display: flex;
 height: 100%;
 align-items: center;
 justify-content: center;
+@media only screen and (max-width: 1200px) {
+  
+  flex:0.5;
+ 
+ }
 @media only screen and (max-width: 768px) {
   
  display: none;
@@ -115,14 +125,18 @@ justify-content: center;
 export const ImageAlbum = styled.div`
 width: 78px;
 height: 82px;
-background-size: cover;
+
+background-size:cover;
 border-radius: 10px;
+background-repeat: no-repeat;
 background-position: center center;
+
+
 `
 export const Informations = styled.div`
 display: flex;
 height: 100%;
-width: 100%;
+
 
 border-right: 1px solid gray;
 align-items: center;
@@ -137,7 +151,7 @@ align-items: center;
 export const ArtistAndMusic = styled.div`
 display: flex;
 flex-direction: column;
-padding-left:10px;
+padding:10px;
 height: 80%;
 align-items: center;
 justify-content: center;
