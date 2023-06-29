@@ -13,7 +13,7 @@ margin-top: 120px;
 export const Photo = styled.div`
 display: flex;
 border: 1px solid #1ED764 ;
-margin-top: 50px;
+
 height: 60px;
 width: 60px;
 border-radius:50%;

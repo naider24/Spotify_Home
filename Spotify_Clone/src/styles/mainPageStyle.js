@@ -16,11 +16,13 @@ display: flex;
 width: 100%;
 height: 100%;
 justify-content: center;
+position: relative;
 `
 
 export const DivTitle = styled.div`
 display: flex;
 flex:1;
+overflow: hidden;
 width: 95%;
 margin-left: 20px;
 padding-left: 10px;

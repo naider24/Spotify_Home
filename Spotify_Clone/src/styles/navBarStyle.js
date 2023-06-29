@@ -12,6 +12,7 @@ padding: 30px;
 
 
 
+
 @media only screen and (max-width: 768px) {
   
  display: none;
@@ -34,7 +35,7 @@ z-index: 2;
 `
 export const SpotifyIcon = styled.div`
 display: flex;
-width: 100%;
+width: 100px;
 height: 50px;
 justify-content: start;
 align-items: start;
@@ -42,6 +43,7 @@ background-image: url(${spotifyIcon});
 background-position: center;
 background-repeat: no-repeat;
 padding-block-end:20px;
+
 `
 
 export const IconHome = styled(RiHomeLine)`
@@ -85,10 +87,10 @@ font-family: 'Wix Madefor Display', sans-serif;
 
 export const Slider = styled.div`
 display: flex;
-width: 100%;
+width: 80%;
 background-color: #1ED764;
 position: absolute;
-top: 0%;
+top: 35%;
 border-radius: 10px;
 height: 50px;
 transition: 0.6s;

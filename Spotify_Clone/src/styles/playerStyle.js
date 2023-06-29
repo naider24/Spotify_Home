@@ -80,7 +80,6 @@ transition: 0.6s;
 
 
 export const BarSound = styled.input`
-
   appearance: none;
   margin-right: 15px;
   width: 200px;
@@ -88,11 +87,7 @@ export const BarSound = styled.input`
   background: white;
   border-radius: 5px;
   background-image: linear-gradient(#1ED764, #1ED764);
-  
-
   background-repeat: no-repeat;
-
-
 
 &::-webkit-slider-thumb {
 
@@ -118,8 +113,8 @@ align-items: center;
 justify-content: center;
 `
 export const ImageAlbum = styled.div`
-width: 30%;
-height: 90%;
+width: 78px;
+height: 82px;
 background-size: cover;
 border-radius: 10px;
 background-position: center center;
@@ -128,7 +123,7 @@ export const Informations = styled.div`
 display: flex;
 height: 100%;
 width: 100%;
-padding-left: 20px;
+
 border-right: 1px solid gray;
 align-items: center;
 
@@ -142,7 +137,7 @@ align-items: center;
 export const ArtistAndMusic = styled.div`
 display: flex;
 flex-direction: column;
-padding: 10px;
+padding-left:10px;
 height: 80%;
 align-items: center;
 justify-content: center;
