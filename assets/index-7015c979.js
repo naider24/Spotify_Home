@@ -112,7 +112,7 @@ z-index: 3;
 flex:1;
 display: flex;
 height: 100%;
-
+width: 100%;
 align-items: center;
 
 
@@ -207,8 +207,7 @@ background-position: center center;
 `,Q0=U.div`
 display: flex;
 height: 100%;
-
-
+width: 100%;
 border-right: 1px solid gray;
 align-items: center;
 
