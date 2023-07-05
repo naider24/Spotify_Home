@@ -26,7 +26,7 @@ export const MusicInformation = styled.div`
 flex:1;
 display: flex;
 height: 100%;
-
+width: 100%;
 align-items: center;
 
 
@@ -136,8 +136,7 @@ background-position: center center;
 export const Informations = styled.div`
 display: flex;
 height: 100%;
-
-
+width: 100%;
 border-right: 1px solid gray;
 align-items: center;
 
